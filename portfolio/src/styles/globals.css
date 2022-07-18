@@ -4,9 +4,9 @@
 
 html,
 body {
+  background-color: #011627;
   padding: 0;
   margin: 0;
-  font-size: 0.875rem;
   font-family: -apple-system, Fira Code, Roboto, sans-serif;
 }
 
