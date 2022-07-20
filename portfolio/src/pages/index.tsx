@@ -9,26 +9,26 @@ const Home: NextPage = () => {
             <p className="text-lg text-white">Hi all. I am</p>
             <h1 className="text-6xl text-white">Wendel S. Pereira</h1>
             <h2 className="text-purple-900 text-[2rem]">
-              &gt; Full stack developer
+              {" Full stack developer"}
             </h2>
           </div>
           <div>
             <p className="text-brand-600 text-base">
-              // complete the game to continue
+              {"// complete the game to continue"}
             </p>
             <p className="text-brand-600 text-base">
-              // you can also see it on my Github page
+              {"// you can also see it on my Github page"}
             </p>
             <p>
               <span className="text-purple-900 text-base font-medium">
-                const&nbsp;
+                {"const "}
               </span>
               <span className="text-green-900 text-base font-medium">
-                githubLink&nbsp;
+                {"github"}
               </span>
-              <span className="text-white text-base font-medium">=&nbsp;</span>
-              <span className="text-orange-900 text-base font-medium" text->
-                "https://github.com/wendelspereira/url"
+              <span className="text-white text-base font-medium">{" = "}</span>
+              <span className="text-orange-900 text-base font-medium">
+                {"https://github.com/wendelspereira/url"}
               </span>
             </p>
           </div>

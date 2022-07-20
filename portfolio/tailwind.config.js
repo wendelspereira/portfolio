@@ -19,16 +19,32 @@ module.exports = {
         green: {
           900: "#43D9AD",
         },
+        white: {
+          100: "#ffffff",
+        },
       },
 
-      // backgroundImage: {
-      //  blurs: "url('/src/public/backgroundBlurs.svg')"
-      // },
+      gridTemplateAreas: {
+        'layout': [
+          'primaryBar activityBar tabs',
+          'primaryBar activityBar codeBody',
+        ],
+      },
+
+      
+      gridTemplateColumns: {
+        'layout': '4.25rem 15rem 2rem',
+      },
+      gridTemplateRows: {
+        'layout': '2.5rem 1fr',
+      },
 
       fontFamily: {
         fira: ["Fira Code", "Roboto", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    import ('@savvywombat/tailwindcss-grid-areas')
+  ]
 };

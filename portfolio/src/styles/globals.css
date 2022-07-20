@@ -21,8 +21,29 @@ a {
 
 :root {
   --white: #ffffff;
-  --bg-main: #1e2d3d;
+  --bg-main: #011627;
   --text-main: #607b96;
   --orange: #FEA55F;
   --border-grey: #607B96;
 }
+
+::-webkit-scrollbar {
+  width: 1.625rem;
+  height: 100%;
+}
+::-webkit-scrollbar-button {
+  width: 1.15rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #011627;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #607b96;
+}
+
+
+
