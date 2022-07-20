@@ -8,4 +8,4 @@ const Contact: NextPage = () => {
   )
 }
 
-export {Contact}
+export default Contact

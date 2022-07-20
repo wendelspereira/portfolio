@@ -8,4 +8,4 @@ const Projects: NextPage = () => {
   )
 }
 
-export {Projects}
+export default Projects
