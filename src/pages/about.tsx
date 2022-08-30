@@ -97,7 +97,7 @@ const About: NextPage = () => {
                 size={20}
                 color="#43D9AD"
               />
-              <a  rel="noopener" href="mailto:wendelspereira@outlook.com">@wendelspereira</a>
+              <a  rel="noopener noreferrer" target="_blank" href="mailto:wendelspereira@outlook.com">@wendelspereira</a>
             </li>
             <li className="flex items-center hover:text-white-100">
               <Phone className="inline mr-2" size={20} color="#43D9AD" />
@@ -117,7 +117,7 @@ const About: NextPage = () => {
         </div>
       </div>
 
-      <div className="codeBody justfy-start items-start text-xl text-brand-600 pl-6 pb-0 w-full overflow-y-scroll">
+      <div className="codeBody justfy-start items-start text-lg text-brand-600 pl-6 pb-0 w-full overflow-y-scroll">
         <CodeMirror
           value={`/** Sou um deseull stack, com mais de três anos dea no\n*   desenvolvimento web, mobile e Itefólio conta com alguns projetos\n*   desenvolfreelancer além de várias outras aplicaçõesPossuo\n*   conhecimentos em programal e orientada a objetos, atuando pre com\n*   a linguagem Typescript, principais tecnologias em torno do seu\n*   ecossistemama. Tenho grande ila automação de processos de forma\n*   einteligente, área onde tenh por implementar de soluções que\n*   economizem recursos e entreguem melhores  resultados.\n*/`}
           height="100%"

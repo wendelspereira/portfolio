@@ -65,13 +65,13 @@ const Contact: NextPage = () => {
         </div>
         <div className={"px-5 py-4"}>
           <ul className="flex flex-col gap-2 text-text-main hover:text-white">
-            <a  rel="noopener" href="mailto:wendelspereira@outlook.com">
+            <a  rel="noopener noreferrer" target="_blank" href="mailto:wendelspereira@outlook.com">
               <li className="flex items-center gap-2 hover:text-white-100">
                 <Envelope size={16} color="#607b96" weight="fill" />
                 <span>@wendelspereira</span>
               </li>
             </a>
-            <a  rel="noopener" href="https://api.whatsapp.com/send/?phone=5587996592930&text&type=phone_number&app_absent=0">
+            <a  rel="noopener noreferrer" target="_blank" href="https://api.whatsapp.com/send/?phone=5587996592930&text&type=phone_number&app_absent=0">
               <li className="flex items-center gap-2 hover:text-white-100">
                 <Phone size={16} color="#607b96" weight="fill" />
                 <span>(87)99659-2930</span>
@@ -88,7 +88,7 @@ const Contact: NextPage = () => {
         </div>
         <div className={"px-5 py-4"}>
           <ul className="flex flex-col gap-2 text-text-main">
-            <a  rel="noopener" href="https://www.youtube.com/channel/UCNldlHLt5OU1vTIu1yWZyhw">
+            <a  rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCNldlHLt5OU1vTIu1yWZyhw">
               <li className="flex items-center gap-2 hover:text-white-100">
                 <span>
                   <ArrowSquareOut size={16} color="#607b96" weight="fill" />
@@ -96,7 +96,7 @@ const Contact: NextPage = () => {
                 YouTube channel
               </li>
             </a>
-            <a  rel="noopener" href="https://www.instagram.com/wendelspereira">
+            <a  rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/wendelspereira">
               <li className="flex items-center gap-2 hover:text-white-100">
                 <span>
                   <ArrowSquareOut size={16} color="#607b96" weight="fill" />
@@ -104,7 +104,7 @@ const Contact: NextPage = () => {
                 Instagram accout
               </li>
             </a>
-            <a  rel="noopener" href="https://www.linkedin.com/in/devwendelspereira">
+            <a  rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/devwendelspereira">
               <li className="flex items-center gap-2 hover:text-white-100">
                 <span>
                   <ArrowSquareOut size={16} color="#607b96" weight="fill" />
@@ -112,7 +112,7 @@ const Contact: NextPage = () => {
                 Linkedin
               </li>
             </a>
-            <a  rel="noopener" href="https://www.github.com/wendelspereira">
+            <a  rel="noopener noreferrer" target="_blank" href="https://www.github.com/wendelspereira">
               <li className="flex items-center gap-2 hover:text-white-100">
                 <span>
                   <ArrowSquareOut size={16} color="#607b96" weight="fill" />

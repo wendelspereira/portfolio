@@ -9,9 +9,11 @@ const Header: NextComponentType = () => {
   return (
     <header className="flex w-full h-12 border-b border-brand-600">
       <ul className="flex  items-center justify-start w-full h-full overflow-clip ">
-        <li className="flex items-center h-full border-r border-brand-600 text-brand-600 w-[19rem] pl-5 overflow-clip">
-          Wendel S. Pereira
-        </li>
+        <Link href="/">
+          <li className="flex items-center h-full border-r border-brand-600 text-brand-600 w-[19rem] pl-5 overflow-clip">
+            Wendel S. Pereira
+          </li>
+        </Link>
         <Link href="/">
           <li
             className={classNames(

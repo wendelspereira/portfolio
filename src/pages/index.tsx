@@ -2,56 +2,6 @@ import { javascript } from "@codemirror/lang-javascript";
 import ReactCodeMirror from "@uiw/react-codemirror";
 import type { NextPage } from "next";
 import { codeMirrorTheme } from "../config/codeMirrorTheme";
-// import styles from "../styles/home.css"
-
-function handleScroller(e: React.UIEvent<HTMLElement>) {
-  //  const currentY = e.currentTarget.getBoundingClientRect().y
-  const screenCenter = window.innerHeight / 2;
-  const element = e.currentTarget.getElementsByClassName("wendel");
-  const currentY = element[0].getBoundingClientRect().y;
-
-  if (currentY > screenCenter) {
-    element[0].classList.add("bg-red")
-  }
-
-  // console.log(elements)
-
-  // console.log(window.scrollBy.)
-}
-
-// const controls = document.querySelectorAll(".control");
-// let currentItem = 0;
-// const items = document.querySelectorAll(".item");
-// const maxItems = items.length;
-
-// controls.forEach((control) => {
-//   control.addEventListener("click", (e) => {
-//     isLeft = e.target.classList.contains("arrow-left");
-
-//     if (isLeft) {
-//       currentItem -= 1;
-//     } else {
-//       currentItem += 1;
-//     }
-
-//     if (currentItem >= maxItems) {
-//       currentItem = 0;
-//     }
-
-//     if (currentItem < 0) {
-//       currentItem = maxItems - 1;
-//     }
-
-//     items.forEach((item) => item.classList.remove("current-item"));
-
-//     items[currentItem].scrollIntoView({
-//       behavior: "smooth",
-//       inline: "center"
-//     });
-
-//     items[currentItem].classList.add("current-item");
-//   });
-// });
 
 const Home: NextPage = () => {
   return (
@@ -85,7 +35,7 @@ const Home: NextPage = () => {
                 {" = "}
               </span>
               <span className="text-orange-900 text-base font-medium">
-                <a  href="https://github.com/wendelspereira/">
+                <a href="https://github.com/wendelspereira/">
                   {"https://github.com/wendelspereira/"}
                 </a>
               </span>
@@ -95,10 +45,9 @@ const Home: NextPage = () => {
       </section>
       <section id="container" className={`flex-1 items-center justify-center bg-index_blur bg-auto`}>
         <div
-          className="flex w-full h-full flex-col justify-center items-center no-scrollbar overflow-y-auto gap-4 py-8"
-          onScroll={handleScroller}
+          className="flex w-full h-full flex-col no-scrollbar overflow-auto gap-4 py-8"
         >
-          <div className="bg-brand-1000 rounded-lg py-6 px-7 opacity-50">
+          <div className="bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
             <ReactCodeMirror
               value={`function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n   const value: T = parseModel(chunk._response, chunk._value);\n   const initializedChunk: InitializedChunk<T> = (chunk: any);\n   initializedChunk._status = INITIALIZED;\n   initializedChunk._value = value;\n   return value;\n}`}
               height="100%"
@@ -112,7 +61,7 @@ const Home: NextPage = () => {
               }}
             />
           </div>
-          <div className="bg-brand-1000 rounded-lg py-6 px-7 opacity-50 wendel">
+          <div className="bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50 wendel">
             <ReactCodeMirror
               value={`function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n   const value: T = parseModel(chunk._response, chunk._value);\n   const initializedChunk: InitializedChunk<T> = (chunk: any);\n   initializedChunk._status = INITIALIZED;\n   initializedChunk._value = value;\n   return value;\n}`}
               height="100%"
@@ -126,7 +75,7 @@ const Home: NextPage = () => {
               }}
             />
           </div>
-          <div className="bg-brand-1000 rounded-lg py-6 px-7 opacity-50">
+          <div className="bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
             <ReactCodeMirror
               value={`function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n   const value: T = parseModel(chunk._response, chunk._value);\n   const initializedChunk: InitializedChunk<T> = (chunk: any);\n   initializedChunk._status = INITIALIZED;\n   initializedChunk._value = value;\n   return value;\n}`}
               height="100%"
@@ -140,7 +89,7 @@ const Home: NextPage = () => {
               }}
             />
           </div>
-          <div className="bg-brand-1000 rounded-lg py-6 px-7 opacity-50">
+          <div className="bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
             <ReactCodeMirror
               value={`function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n   const value: T = parseModel(chunk._response, chunk._value);\n   const initializedChunk: InitializedChunk<T> = (chunk: any);\n   initializedChunk._status = INITIALIZED;\n   initializedChunk._value = value;\n   return value;\n}`}
               height="100%"
@@ -154,7 +103,7 @@ const Home: NextPage = () => {
               }}
             />
           </div>
-          <div className="bg-brand-1000 rounded-lg py-6 px-7 opacity-50">
+          <div className="bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
             <ReactCodeMirror
               value={`function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n   const value: T = parseModel(chunk._response, chunk._value);\n   const initializedChunk: InitializedChunk<T> = (chunk: any);\n   initializedChunk._status = INITIALIZED;\n   initializedChunk._value = value;\n   return value;\n}`}
               height="100%"
@@ -168,7 +117,7 @@ const Home: NextPage = () => {
               }}
             />
           </div>
-          <div className="bg-brand-1000 rounded-lg py-6 px-7 opacity-50">
+          <div className="bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
             <ReactCodeMirror
               value={`function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n   const value: T = parseModel(chunk._response, chunk._value);\n   const initializedChunk: InitializedChunk<T> = (chunk: any);\n   initializedChunk._status = INITIALIZED;\n   initializedChunk._value = value;\n   return value;\n}`}
               height="100%"
@@ -182,7 +131,7 @@ const Home: NextPage = () => {
               }}
             />
           </div>
-          <div className="bg-brand-1000 rounded-lg py-6 px-7 opacity-50">
+          <div className="bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
             <ReactCodeMirror
               value={`function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n   const value: T = parseModel(chunk._response, chunk._value);\n   const initializedChunk: InitializedChunk<T> = (chunk: any);\n   initializedChunk._status = INITIALIZED;\n   initializedChunk._value = value;\n   return value;\n}`}
               height="100%"
@@ -197,33 +146,9 @@ const Home: NextPage = () => {
             />
           </div>
         </div>
-        {/* <div className="relative top-550 left-0"></div>
-        <div className="absolute  top-[calc(50%-14.9rem)] left-[calc(50%+5rem)]">
-          <img src="/Snake.svg" className="" alt="" />
-        </div> */}
       </section>
     </main>
   );
 };
 
 export default Home;
-
-
-
-
-// <!DOCTYPE html>
-// <html lang="en">
-
-// <head>
-//   <meta charset="utf-8">
-//   <title>HTML</title>
-//   <link rel="stylesheet" href="main2.css" type="text/css" />
-// </head>
-
-// <body>
-//   <div id="container">
-//     <div id="box">as</div>
-//   </div>
-// </body>
-
-// </html>
