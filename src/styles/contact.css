@@ -1,0 +1,22 @@
+.contact>label>input {
+    display: flex;
+    align-items: start;
+    /* height: 2.5rem; */
+    width: 100%;
+    border-radius: 0.5rem;
+    color: var(--white);
+    background-color: var(--bg-dark);
+    border: solid 1px var(--border-grey);
+    margin-top: 0.625rem;
+    outline: var(--border-secundary);
+    padding: 0.625rem 0.937rem;
+    
+}
+
+input:hover {
+  box-shadow: 0 0 0 3px rgba(96, 123, 150, 0.3);
+}
+ 
+input:focus {
+  box-shadow: 0 0 0 3px rgba(96, 123, 150, 0.3);
+} 

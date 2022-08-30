@@ -39,7 +39,7 @@ const About: NextPage = () => {
         {/* personal-info */}
         <div
           className={
-            "flex w-full items-center gap-3 border-b border-brand-600 min-h-40 hover:text-white-100 px-3"
+            "flex w-full items-center gap-3 border-b border-brand-600 h-10 hover:text-white-100 px-3"
           }
         >
           <span>

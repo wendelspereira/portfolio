@@ -3,7 +3,7 @@ import { ArrowSquareOut, CaretDown, Envelope, Phone, X } from "phosphor-react";
 import { javascript } from "@codemirror/lang-javascript";
 import CodeMirror from "@uiw/react-codemirror";
 import { useState } from "react";
-import {codeMirrorTheme} from "../config/codeMirrorTheme"
+import { codeMirrorTheme } from "../config/codeMirrorTheme"
 
 const Contact: NextPage = () => {
   const [name, setName] = useState("");
@@ -14,6 +14,13 @@ const Contact: NextPage = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     setSent(true);
+  };
+
+  const handleNewMessage = () => {
+    setSent(false);
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   const handleMirror = (e: React.FormEvent<HTMLInputElement>) => {
@@ -56,7 +63,7 @@ const Contact: NextPage = () => {
 
   return (
     <div className="flex w-full h-[calc(100vh-6rem)]">
-      <div className="flex flex-col border-r border-brand-600 w-[19rem] h-full">
+      <div className="flex flex-col border-r border-brand-600 w-72 h-full">
         <div className="flex items-center h-10 w-full border-b border-brand-600 text-white-100 gap-3 px-3">
           <span>
             <CaretDown className="inline" size={16} />
@@ -65,13 +72,13 @@ const Contact: NextPage = () => {
         </div>
         <div className={"px-5 py-4"}>
           <ul className="flex flex-col gap-2 text-text-main hover:text-white">
-            <a  rel="noopener noreferrer" target="_blank" href="mailto:wendelspereira@outlook.com">
+            <a rel="noopener noreferrer" target="_blank" href="mailto:wendelspereira@outlook.com">
               <li className="flex items-center gap-2 hover:text-white-100">
                 <Envelope size={16} color="#607b96" weight="fill" />
                 <span>@wendelspereira</span>
               </li>
             </a>
-            <a  rel="noopener noreferrer" target="_blank" href="https://api.whatsapp.com/send/?phone=5587996592930&text&type=phone_number&app_absent=0">
+            <a rel="noopener noreferrer" target="_blank" href="https://api.whatsapp.com/send/?phone=5587996592930&text&type=phone_number&app_absent=0">
               <li className="flex items-center gap-2 hover:text-white-100">
                 <Phone size={16} color="#607b96" weight="fill" />
                 <span>(87)99659-2930</span>
@@ -88,7 +95,7 @@ const Contact: NextPage = () => {
         </div>
         <div className={"px-5 py-4"}>
           <ul className="flex flex-col gap-2 text-text-main">
-            <a  rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCNldlHLt5OU1vTIu1yWZyhw">
+            <a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCNldlHLt5OU1vTIu1yWZyhw">
               <li className="flex items-center gap-2 hover:text-white-100">
                 <span>
                   <ArrowSquareOut size={16} color="#607b96" weight="fill" />
@@ -96,7 +103,7 @@ const Contact: NextPage = () => {
                 YouTube channel
               </li>
             </a>
-            <a  rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/wendelspereira">
+            <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/wendelspereira">
               <li className="flex items-center gap-2 hover:text-white-100">
                 <span>
                   <ArrowSquareOut size={16} color="#607b96" weight="fill" />
@@ -104,7 +111,7 @@ const Contact: NextPage = () => {
                 Instagram accout
               </li>
             </a>
-            <a  rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/devwendelspereira">
+            <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/devwendelspereira">
               <li className="flex items-center gap-2 hover:text-white-100">
                 <span>
                   <ArrowSquareOut size={16} color="#607b96" weight="fill" />
@@ -112,7 +119,7 @@ const Contact: NextPage = () => {
                 Linkedin
               </li>
             </a>
-            <a  rel="noopener noreferrer" target="_blank" href="https://www.github.com/wendelspereira">
+            <a rel="noopener noreferrer" target="_blank" href="https://www.github.com/wendelspereira">
               <li className="flex items-center gap-2 hover:text-white-100">
                 <span>
                   <ArrowSquareOut size={16} color="#607b96" weight="fill" />
@@ -129,7 +136,7 @@ const Contact: NextPage = () => {
             contact
             <div className="items-center justify-center p-1 hover:rounded-md hover:text-white-100 hover:bg-brand-500 hover:transition">
 
-            <X weight="bold" size={12} />
+              <X weight="bold" size={12} />
             </div>
           </div>
         </div>
@@ -139,11 +146,12 @@ const Contact: NextPage = () => {
             {!sent ? (
               <form
                 onSubmit={handleSubmit}
-                className="flex flex-col text-brand-600 w-full xl:max-w-[23rem] gap-6"
+                className="contact flex flex-col text-brand-600 w-full xl:max-w-[23rem] gap-6"
               >
                 <label htmlFor="name">
                   _name
                   <input
+                    className="wendel"
                     name="name"
                     onChange={handleMirror}
                     autoComplete="off"
@@ -155,6 +163,7 @@ const Contact: NextPage = () => {
                 <label htmlFor="email">
                   _email
                   <input
+                    className="wendel"
                     name="email"
                     onChange={handleMirror}
                     autoComplete="off"
@@ -171,7 +180,7 @@ const Contact: NextPage = () => {
                     autoComplete="off"
                     type="textarea"
                     id="message"
-                    className="h-36 flex items-start "
+                    className="flex items-start h-36"
                   />
                 </label>
 
@@ -189,13 +198,13 @@ const Contact: NextPage = () => {
                   Your message has been accepted. You will recieve answer really
                   soon!
                 </p>
-                <button className="flex items-center justify-center xl:text-sm xl:py-3 xl:px-4 bg-brand-500 xl:h-10 xl:w-44 text-white-100 rounded-lg">
+                <button onClick={handleNewMessage} className="flex items-center justify-center xl:text-sm xl:py-3 xl:px-4 bg-brand-500 xl:h-10 xl:w-44 text-white-100 rounded-lg">
                   send-new-message
                 </button>
               </div>
             )}
           </section>
-          <section className="flex h-[calc(100%-3rem)] flex-1 xl:pt-32 justify-center">
+          <section className="flex h-[calc(100%-3rem)] flex-1 items-center justify-center">
             <CodeMirror
               value={`const button = document.querySelector('#submit');\nconst message = {\n   name: "${name}",\n   email: "${email}",\n   message: "${message}",\n   date: "${formatedToday}"\n} \n\nbutton.addEventListener('click', () => {\n   form.send(message);\n}`}
               height="100%"

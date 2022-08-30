@@ -47,7 +47,7 @@ const Home: NextPage = () => {
         <div
           className="flex w-full h-full flex-col no-scrollbar overflow-auto gap-4 py-8"
         >
-          <div className="bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
+          <div className="hover:opacity-100 cursor-pointer bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
             <ReactCodeMirror
               value={`function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n   const value: T = parseModel(chunk._response, chunk._value);\n   const initializedChunk: InitializedChunk<T> = (chunk: any);\n   initializedChunk._status = INITIALIZED;\n   initializedChunk._value = value;\n   return value;\n}`}
               height="100%"
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
               }}
             />
           </div>
-          <div className="bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50 wendel">
+          <div className="hover:opacity-100 cursor-pointer bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50 wendel">
             <ReactCodeMirror
               value={`function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n   const value: T = parseModel(chunk._response, chunk._value);\n   const initializedChunk: InitializedChunk<T> = (chunk: any);\n   initializedChunk._status = INITIALIZED;\n   initializedChunk._value = value;\n   return value;\n}`}
               height="100%"
@@ -75,7 +75,7 @@ const Home: NextPage = () => {
               }}
             />
           </div>
-          <div className="bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
+          <div className="hover:opacity-100 cursor-pointer bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
             <ReactCodeMirror
               value={`function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n   const value: T = parseModel(chunk._response, chunk._value);\n   const initializedChunk: InitializedChunk<T> = (chunk: any);\n   initializedChunk._status = INITIALIZED;\n   initializedChunk._value = value;\n   return value;\n}`}
               height="100%"
@@ -89,7 +89,7 @@ const Home: NextPage = () => {
               }}
             />
           </div>
-          <div className="bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
+          <div className="hover:opacity-100 cursor-pointer bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
             <ReactCodeMirror
               value={`function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n   const value: T = parseModel(chunk._response, chunk._value);\n   const initializedChunk: InitializedChunk<T> = (chunk: any);\n   initializedChunk._status = INITIALIZED;\n   initializedChunk._value = value;\n   return value;\n}`}
               height="100%"
@@ -103,7 +103,7 @@ const Home: NextPage = () => {
               }}
             />
           </div>
-          <div className="bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
+          <div className="hover:opacity-100 cursor-pointer bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
             <ReactCodeMirror
               value={`function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n   const value: T = parseModel(chunk._response, chunk._value);\n   const initializedChunk: InitializedChunk<T> = (chunk: any);\n   initializedChunk._status = INITIALIZED;\n   initializedChunk._value = value;\n   return value;\n}`}
               height="100%"
@@ -117,7 +117,7 @@ const Home: NextPage = () => {
               }}
             />
           </div>
-          <div className="bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
+          <div className="hover:opacity-100 cursor-pointer bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
             <ReactCodeMirror
               value={`function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n   const value: T = parseModel(chunk._response, chunk._value);\n   const initializedChunk: InitializedChunk<T> = (chunk: any);\n   initializedChunk._status = INITIALIZED;\n   initializedChunk._value = value;\n   return value;\n}`}
               height="100%"
@@ -131,7 +131,7 @@ const Home: NextPage = () => {
               }}
             />
           </div>
-          <div className="bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
+          <div className="hover:opacity-100 cursor-pointer bg-brand-1000 w-fit rounded-lg py-6 px-7 opacity-50">
             <ReactCodeMirror
               value={`function initializeModelChunk<T>(chunk: ResolvedModelChunk): T {\n   const value: T = parseModel(chunk._response, chunk._value);\n   const initializedChunk: InitializedChunk<T> = (chunk: any);\n   initializedChunk._status = INITIALIZED;\n   initializedChunk._value = value;\n   return value;\n}`}
               height="100%"

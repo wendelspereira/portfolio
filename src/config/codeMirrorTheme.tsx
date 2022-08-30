@@ -5,13 +5,13 @@ import { tags as t } from "@lezer/highlight";
 export const codeMirrorTheme = createTheme({
     theme: "dark",
     settings: {
-      background: "#011221",
+      background: "#011627",
       foreground: "#75baff",
       caret: "#5d00ff",
       selection: "#036dd626",
       selectionMatch: "#036dd626",
       lineHighlight: "#8a91991a",
-      gutterBackground: "#011221",
+      gutterBackground: "#011627",
       gutterForeground: "#607B96",
     },
     styles: [

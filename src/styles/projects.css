@@ -9,7 +9,7 @@
     user-select: none;
   }
   
-  input {
+  .checkbox > input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
