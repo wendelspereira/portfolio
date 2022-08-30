@@ -34,9 +34,10 @@
   input:checked ~ .checkmark {
     background-color: var(--border-grey);
   }
-
+  
   input:checked ~ div {
-    filter: brightness(150%)
+    filter: brightness(150%);
+    color: white;
   }
 
   .checkmark:after {

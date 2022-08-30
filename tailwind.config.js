@@ -39,27 +39,9 @@ module.exports = {
         },
       },
 
-      gridTemplateAreas: {
-        'layout': [
-          'primaryBar activityBar tabs',
-          'primaryBar activityBar codeBody',
-        ],
-      },
-
-      
-      gridTemplateColumns: {
-        'layout': '4.25rem 15rem 2rem',
-      },
-      gridTemplateRows: {
-        'layout': '2.5rem 1fr',
-      },
-
       fontFamily: {
         fira: ["Fira Code", "Roboto", "sans-serif"],
       },
     },
   },
-  plugins: [
-    import ('@savvywombat/tailwindcss-grid-areas')
-  ]
 };

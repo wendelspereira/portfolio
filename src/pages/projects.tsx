@@ -35,7 +35,7 @@ const Projects: NextPage = () => {
 
   return (
     <div className="flex w-full h-[calc(100vh-6rem)]">
-      <div className="flex flex-col border-r border-brand-600 w-[19rem] h-full">
+      <div className="flex flex-col border-r border-brand-600 w-72 h-full">
         <div className="flex items-center h-10 w-full border-b border-brand-600 text-brand-600 gap-3 px-3">
           <span>
             <CaretDown className="inline" size={16} />
@@ -76,7 +76,7 @@ const Projects: NextPage = () => {
           </div>
         </div>
 
-        <main className="inline-flex flex-wrap w-full h-full py-12 px-14 overflow-y-auto gap-8">
+        <main className="inline-flex flex-wrap w-full h-full py-8 px-12 overflow-y-auto gap-8">
           <ProjectCard />
         </main>
       </div>

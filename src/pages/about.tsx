@@ -15,15 +15,10 @@ import {
   UserList,
   X,
 } from "phosphor-react";
-import { useCallback } from "react";
 
 const About: NextPage = () => {
-  const onChange = useCallback((value: any, viewUpdate: any) => {
-    console.log("value:", value);
-  }, []);
-
   return (
-    <div className="container flex w-full h-[calc(100vh-6rem)] text-text-main">
+    <div className="flex w-full h-[calc(100vh-6rem)] text-text-main">
       {/* Primary bar #######################################################################*/}
       <div
         className="flex flex-col w-16 gap-8 items-center py-4 border-r border-brand-600"
@@ -44,7 +39,7 @@ const About: NextPage = () => {
         {/* personal-info */}
         <div
           className={
-            "flex w-full items-center gap-3 border-b border-brand-600 min-h-[2.5rem] hover:text-white-100 px-3"
+            "flex w-full items-center gap-3 border-b border-brand-600 min-h-40 hover:text-white-100 px-3"
           }
         >
           <span>
@@ -108,7 +103,7 @@ const About: NextPage = () => {
         </div>
       </div>
       {/* Code body ########################################################################## */}
-      <div className="flex flex-col flex-1 justfy-start items-start text-brand-600 no-scrollbar overflow-auto">
+      <div className="flex flex-col flex-1 text-brand-600 no-scrollbar overflow-auto ">
         <div className="flex w-full border-b border-brand-600 h-10">
           <div className="flex items-center ">
             <div className="flex px-3 items-center border-r border-x-brand-600 h-full gap-12">
@@ -130,10 +125,8 @@ const About: NextPage = () => {
             extensions={[javascript({ jsx: true })]}
             width="100%"
             maxWidth="100%"
-            onChange={onChange}
             className="pb-0"
           />
-
         </div>
       </div>
     </div>
