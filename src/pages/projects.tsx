@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { CaretDown, X } from "phosphor-react";
 
-import ProjectCard from "./components/Card";
+import ProjectCard from "../components/Card";
 import { useEffect, useState } from "react";
 
 const Projects: NextPage = () => {
