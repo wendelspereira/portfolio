@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import "../styles/projects.css";
 import "../styles/contact.css";
+import "../styles/about.css";
 import "../../node_modules/nprogress/nprogress.css";
 import type { AppProps } from "next/app";
 import Footer from "../components/Footer";

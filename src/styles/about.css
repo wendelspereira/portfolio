@@ -1,0 +1,35 @@
+.personal-info>li>input {
+    display: none;
+}
+
+#sub-items {
+    opacity: 0;
+}
+
+/* Before */
+.list-item+label>.caret-r {
+    transform: rotate(0deg);
+    transition: transform 0.15s ease-out;
+}
+
+.list-item+label>#div {
+    height: 0;
+    transition: height 0.15s ease-out;
+}
+
+/* After */
+.list-item:checked+label>.caret-r {
+    transform: rotate(90deg);
+    transition: transform 0.15s ease-out;
+}
+
+/* .list-item:checked+label>ul {
+    height: 5rem;
+    transition: height 0.15s ease-in;
+} */
+
+.list-item:checked+label>ul>li {
+    opacity: 1;
+    transition: opacity 0.15s ease-in;
+    margin-left: 1rem;
+}

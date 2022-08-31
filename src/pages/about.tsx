@@ -48,40 +48,61 @@ const About: NextPage = () => {
           personal-info
         </div>
         {/* content */}
-        <ul className="flex flex-col justify-center pt-4 pb-7 px-3 gap-2">
-          <li className="flex items-center hover:text-white-100">
-            <CaretRight className="inline mr-3" size={16} />
-            <Folder className="inline mr-2" size={20} color="#E99287" />
-            bio
+        <ul className="personal-info flex flex-col justify-center pt-4 pb-7 px-3 gap-2">
+          <li className="flex w-full items-center hover:text-white-100">
+            <input type="checkbox" id="bio" className="list-item" />
+            <label htmlFor="bio">
+              <CaretRight className="caret-r inline mr-3" size={16} />
+              <Folder className="folder-icon inline mr-2" size={20} color="#E99287" />
+              bio
+              <div>
+                <ul>
+                  <li>item</li>
+                  <li>item</li>
+                  <li>item</li>
+                  <li>item</li>
+                </ul>
+              </div>
+            </label>
           </li>
           <li className="flex items-center hover:text-white-100">
-            <CaretRight className="inline mr-3" size={16} />
-            <Folder className="inline mr-2" size={20} color="#43D9AD" />
-            interests
+            <input type="checkbox" id="interests" className="list-item" />
+            <label htmlFor="interests">
+              <CaretRight className="caret-r inline mr-3" size={16} />
+              <Folder className="inline mr-2" size={20} color="#43D9AD" />
+              interests
+            </label>
           </li>
           <li className="flex items-center hover:text-white-100">
-            <CaretDown className="inline mr-3" size={16} />
-            <Folder className="inline mr-2" size={20} color="#3A49A4" />
-            education
+            <input type="checkbox" id="education" className="list-item" />
+            <label htmlFor="education">
+              <CaretDown className="caret-r inline mr-3" size={16} />
+              <Folder className="inline mr-2" size={20} color="#3A49A4" />
+              education
+            </label>
+            <ul id="sub-items">
+              <li className="flex items-center hover:text-white-100 ml-7">
+                <GraduationCap
+                  className="inline mr-2"
+                  size={20}
+                  color="#607B96"
+                />
+                university
+              </li>
+              <li className="flex items-center hover:text-white-100 ml-7">
+                <Files className="inline mr-2" size={20} color="#607B96" />
+                courses
+              </li> 
+            </ul>
+
           </li>
-          <li className="flex items-center hover:text-white-100 ml-7">
-            <GraduationCap
-              className="inline mr-2"
-              size={20}
-              color="#607B96"
-            />
-            university
-          </li>
-          <li className="flex items-center hover:text-white-100 ml-7">
-            <Files className="inline mr-2" size={20} color="#607B96" />
-            courses
-          </li>
+
         </ul>
 
         {/* contacts */}
         <div>
           <div
-            className="flex items-center gap-3 border-y border-brand-600 min-h-40 hover:text-white-100 px-3">
+            className="flex items-center gap-3 border-y border-brand-600 h-10 hover:text-white-100 px-3">
             <CaretDown className="inline" size={16} />
             <span>contacts</span>
           </div>
